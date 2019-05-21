@@ -27,9 +27,10 @@ def build_lab():
     # newer version supplied by Sebastian``
     lla516 = ('lla516', 'iLLA516.gb', 'iLLA516.xml')
     llav2 = ('llav2', 'iNF517.gb', 'iNF517_v2.xml') # updated bigg model
+    llav2C = ('llav2C', 'iNF517.gb', 'iNF517_v2_cobra.xml') # updated bigg model
     lpl = ('lpl', 'iLPL728.gb', 'iLPL728.xml')
     libSet = 'lab'
-    models = [lla516, llav2, lpl]
+    models = [lla516, llav2, llav2C, lpl]
     return libSet, models, True
 
 def build_bigg2_original():
@@ -134,7 +135,7 @@ def build_bigg2_new():
               eco38, eco35, sfl2, eco50, eco32, sce, eco37, eco39, eco44, eco16, eco7, eco43, eco26, \
               ppu, lla, eco47, ype, sfl1, eco27, eco40, eco21, sfl, eco18, eco19, sfl3, eco1, \
               tma, eco11, eco4, eco42, eco2, mtu, eco6, eco48, hpy, sel, eco25, sso, eco10, eco36, eco34,
-              eco28, eco13, eco49, mmu]
+              eco28, eco13, eco49]
     #models = [cgr, ssp, eco31] # incomplete genbank file, incoherent gene identifiers, usable identifers that should be fixed in source model``
     #models = [sbo, eco33] # ,  test
     return libSet, models, True

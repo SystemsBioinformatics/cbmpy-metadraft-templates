@@ -1187,7 +1187,7 @@
   "SFV_0643": "bigg2-sfl"
  },
  "bigg2-sfl": {
-  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iSFV_1184.gb",
   "gene2reaction": {
    "SFV_2794": [
@@ -7578,8 +7578,8 @@
   },
   "sbml_in": "iSFV_1184.xml",
   "taxon_id": "373384",
-  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sfl)-(iSFV_1184).seqplus.xml",
-  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sfl)-(iSFV_1184).seqplus.xml",
+  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sfl)-(iSFV_1184).seqplus.xml",
+  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sfl)-(iSFV_1184).seqplus.xml",
   "reaction2gene": {
    "R_CTPS2": [
     "SFV_2675"

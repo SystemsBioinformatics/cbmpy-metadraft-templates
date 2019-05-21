@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- SBML created with CBMPy (0.7.23.669) on Wed, 08 May 2019 16:45:21 -->
+<!-- SBML created with CBMPy (0.7.23.669) on Tue, 21 May 2019 23:50:42 -->
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:groups="http://www.sbml.org/sbml/level3/version1/groups/version1" level="3" version="1" fbc:required="false" groups:required="false">
   <model metaid="meta_COBRAModel" id="COBRAModel" substanceUnits="mmol_per_gdw" timeUnits="hour" extentUnits="mmol_per_gdw" fbc:strict="true">
     <notes>
       <body xmlns="http://www.w3.org/1999/xhtml">
         <p xmlns="http://www.w3.org/1999/xhtml">
           <br/>
-          <span size="small">Model &quot;<strong>COBRAModel</strong>&quot; (Model Exported from COBRA Toolbox) generated with <a href="http://cbmpy.sourceforge.net">CBMPy</a> (0.7.23.669) on Wed, 08 May 2019 16:45:21.</span>
+          <span size="small">Model &quot;<strong>COBRAModel</strong>&quot; (Model Exported from COBRA Toolbox) generated with <a href="http://cbmpy.sourceforge.net">CBMPy</a> (0.7.23.669) on Tue, 21 May 2019 23:50:42.</span>
         </p>
       </body>
     </notes>
@@ -335,9 +335,9 @@
       <species metaid="meta_M_drib_e" id="M_drib_e" name="Deoxyribose C5H10O4" compartment="e" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:chemicalFormula="C5H10O4"/>
       <species metaid="meta_M_dtdp4d6dg_c" id="M_dtdp4d6dg_c" name="DTDP-4-dehydro-6-deoxy-D-glucose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H22N2O15P2"/>
       <species metaid="meta_M_dtdp4d6dm_c" id="M_dtdp4d6dm_c" name="DTDP-4-dehydro-6-deoxy-L-mannose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H22N2O15P2"/>
-      <species metaid="meta_M_dtdp6dm_c" id="M_dtdp6dm_c" name="DTDP 6 deoxy L mannose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H24N2O15P2"/>
       <species metaid="meta_M_dtdp_c" id="M_dtdp_c" name="DTDP C10H13N2O11P2" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H13N2O11P2"/>
-      <species metaid="meta_M_dtdpglc_c" id="M_dtdpglc_c" name="DTDPglucose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H24N2O16P2"/>
+      <species metaid="meta_M_dtdpglu_c" id="M_dtdpglu_c" name="DTDPglucose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H24N2O16P2"/>
+      <species metaid="meta_M_dtdprmn_c" id="M_dtdprmn_c" name="DTDP 6 deoxy L mannose" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C16H24N2O15P2"/>
       <species metaid="meta_M_dtmp_c" id="M_dtmp_c" name="DTMP C10H13N2O8P" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C10H13N2O8P"/>
       <species metaid="meta_M_dttp_c" id="M_dttp_c" name="DTTP C10H13N2O14P3" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C10H13N2O14P3"/>
       <species metaid="meta_M_dudp_c" id="M_dudp_c" name="DUDP C9H11N2O11P2" compartment="c" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C9H11N2O11P2"/>
@@ -1027,10 +1027,10 @@
       </reaction>
       <reaction metaid="meta_R_CPSS_LLA" id="R_CPSS_LLA" name="CPS synthase complex LLA specific" reversible="true" fast="false" fbc:lowerFluxBound="bnd_par7" fbc:upperFluxBound="bnd_par31">
         <listOfReactants>
-          <speciesReference species="M_dtdp6dm_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_udpg_c" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_dtdprmn_c" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c" stoichiometry="4" constant="true"/>
           <speciesReference species="M_udpgal_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_udpg_c" stoichiometry="2" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_h_c" stoichiometry="5" constant="true"/>
@@ -5473,33 +5473,6 @@
           <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS06145"/>
         </fbc:geneProductAssociation>
       </reaction>
-      <reaction metaid="meta_R_TDPDRR_1" id="R_TDPDRR_1" name="DTDP 4 dehydrorhamnose reductase" reversible="true" fast="false" fbc:lowerFluxBound="bnd_par7" fbc:upperFluxBound="bnd_par31">
-        <annotation>
-          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-            <data id="gbank_seq_LLMG_RS01110" value="MILITGGNGQLGTELRHLLDERGMAYTATDAKELDITDKVAVDTFFDKNKPELVYHCAAYTAVDKAEDEGRELDEKINVDGTKNVAEAAARVGATLVYISTDYVFGGTLPIGQEWPVDAPKAPESEYGRTKHLGEEAVVASGVKHYIVRTAWVFGSYGPNFVFTMQNLATRFPELTVVNDQHGRPTWTRTLAEFMVYLVNEKADFGFYHLTNDAAPGEDVTWFDFAKEILKDTDVLVKPVDSSKFPAKAKRPFNSTMSLEKAKATGFVIPTWQDALASMLEKGDLRENKDGLKGEISKK"/>
-          </listOfKeyValueData>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="M_dtdp6dm_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_dtdp4d6dm_c" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation fbc:id="R_TDPDRR_1_gpr" fbc:name="R_TDPDRR_1_gpr">
-          <annotation>
-            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-              <data id="gbank_description" value="dTDP-4-dehydrorhamnose reductase"/>
-              <data id="gbank_name" value="LLMG_RS01110"/>
-              <data id="gbank_seq" value="MILITGGNGQLGTELRHLLDERGMAYTATDAKELDITDKVAVDTFFDKNKPELVYHCAAYTAVDKAEDEGRELDEKINVDGTKNVAEAAARVGATLVYISTDYVFGGTLPIGQEWPVDAPKAPESEYGRTKHLGEEAVVASGVKHYIVRTAWVFGSYGPNFVFTMQNLATRFPELTVVNDQHGRPTWTRTLAEFMVYLVNEKADFGFYHLTNDAAPGEDVTWFDFAKEILKDTDVLVKPVDSSKFPAKAKRPFNSTMSLEKAKATGFVIPTWQDALASMLEKGDLRENKDGLKGEISKK"/>
-              <data id="gbank_id" value="WP_011834293.1"/>
-            </listOfKeyValueData>
-          </annotation>
-          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01110"/>
-        </fbc:geneProductAssociation>
-      </reaction>
       <reaction metaid="meta_R_CYSTRS_1" id="R_CYSTRS_1" name="Cysteinyl tRNA synthetase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
         <annotation>
           <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
@@ -6637,31 +6610,6 @@
               <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01620"/>
             </fbc:and>
           </fbc:or>
-        </fbc:geneProductAssociation>
-      </reaction>
-      <reaction metaid="meta_R_TDPGDH_1" id="R_TDPGDH_1" name="DTDPglucose 4 6 dehydratase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
-        <annotation>
-          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-            <data id="gbank_seq_LLMG_RS01105" value="MTEFKNIVVTGGAGFIGSNFVHYVYNNHPDVHITVLDKLTYAGNVNNINMLFDSGRVELVVGDIADPEIVDQVASKADAIVHYAAESHNDNSLKSQDEFIQTNFIGTYTLIQAARKYDLRFHHVSTDEVYGDLPYREDLPGHGEGEGEKFTDKTPYNPSSPYSSTKAASDLIVRAWVRSFGLKATISNCSNNYGPFQHIEKFIPRQITNILSGIKPKLYGDGKNVRDWIHTEDHSSGVWTILTKGQMGETYLIGADGEKNNKEVLEDILTRMGKDKDDYDRVTDRAGHDLRYAIDNSKLRTELGWTPKHTDFESGLQATIDWYRENENWWKAEKDAVEAKYAETQKVLDK"/>
-          </listOfKeyValueData>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="M_dtdpglc_c" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_dtdp4d6dg_c" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation fbc:id="R_TDPGDH_1_gpr" fbc:name="R_TDPGDH_1_gpr">
-          <annotation>
-            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-              <data id="gbank_description" value="dTDP-glucose 4,6-dehydratase"/>
-              <data id="gbank_name" value="LLMG_RS01105"/>
-              <data id="gbank_seq" value="MTEFKNIVVTGGAGFIGSNFVHYVYNNHPDVHITVLDKLTYAGNVNNINMLFDSGRVELVVGDIADPEIVDQVASKADAIVHYAAESHNDNSLKSQDEFIQTNFIGTYTLIQAARKYDLRFHHVSTDEVYGDLPYREDLPGHGEGEGEKFTDKTPYNPSSPYSSTKAASDLIVRAWVRSFGLKATISNCSNNYGPFQHIEKFIPRQITNILSGIKPKLYGDGKNVRDWIHTEDHSSGVWTILTKGQMGETYLIGADGEKNNKEVLEDILTRMGKDKDDYDRVTDRAGHDLRYAIDNSKLRTELGWTPKHTDFESGLQATIDWYRENENWWKAEKDAVEAKYAETQKVLDK"/>
-              <data id="gbank_id" value="WP_011834292.1"/>
-            </listOfKeyValueData>
-          </annotation>
-          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01105"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="meta_R_IG3PS_1" id="R_IG3PS_1" name="Imidazole glycerol 3 phosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
@@ -8152,33 +8100,6 @@
         <listOfReactants>
           <speciesReference species="M_tre_e" stoichiometry="1" constant="true"/>
         </listOfReactants>
-      </reaction>
-      <reaction metaid="meta_R_G1PTMT" id="R_G1PTMT" name="Glucose 1 phosphate thymidylyltransferase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
-        <annotation>
-          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-            <data id="gbank_seq_LLMG_RS01090" value="MKGIILAGGSGTRLYPLTRAASKQLMPIYDKPMIYYPLSTLMLAGIKDILIISTPTDTPRFKELLQDGSEFGINLQYAVQPSPDGLAQAFIIGEDFIGDDSVALILGDNIYHGPGMSKMLQNAAAKEKGATVFGYHVPDPERFGVVEFDKDMNAVSIEEKPEEPKSNYAVTGLYFYDNDVIEIAKSIEPSPRGELEITDVNKAYLERGDLSVELMGRGFAWLDTGTHESLLEAAQYIETVQRMQNMQVANLEEIAYRMGYITEEDVRTLAQPLKKNEYGQYLLRLIGDK"/>
-          </listOfKeyValueData>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="M_dttp_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_g1p_c" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_ppi_c" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_dtdpglc_c" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <fbc:geneProductAssociation fbc:id="R_G1PTMT_gpr" fbc:name="R_G1PTMT_gpr">
-          <annotation>
-            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
-              <data id="gbank_description" value="glucose-1-phosphate thymidylyltransferase"/>
-              <data id="gbank_name" value="LLMG_RS01090"/>
-              <data id="gbank_seq" value="MKGIILAGGSGTRLYPLTRAASKQLMPIYDKPMIYYPLSTLMLAGIKDILIISTPTDTPRFKELLQDGSEFGINLQYAVQPSPDGLAQAFIIGEDFIGDDSVALILGDNIYHGPGMSKMLQNAAAKEKGATVFGYHVPDPERFGVVEFDKDMNAVSIEEKPEEPKSNYAVTGLYFYDNDVIEIAKSIEPSPRGELEITDVNKAYLERGDLSVELMGRGFAWLDTGTHESLLEAAQYIETVQRMQNMQVANLEEIAYRMGYITEEDVRTLAQPLKKNEYGQYLLRLIGDK"/>
-              <data id="gbank_id" value="WP_011834289.1"/>
-            </listOfKeyValueData>
-          </annotation>
-          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01090"/>
-        </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="meta_R_NADH4" id="R_NADH4" name="NADH dehydrogenase  Menaquinone 7  no proton " reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par0">
         <annotation>
@@ -10049,6 +9970,33 @@
           <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS03780"/>
         </fbc:geneProductAssociation>
       </reaction>
+      <reaction metaid="meta_R_TDPDRR" id="R_TDPDRR" name="DTDP 4 dehydrorhamnose reductase" reversible="true" fast="false" fbc:lowerFluxBound="bnd_par7" fbc:upperFluxBound="bnd_par31">
+        <annotation>
+          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+            <data id="gbank_seq_LLMG_RS01110" value="MILITGGNGQLGTELRHLLDERGMAYTATDAKELDITDKVAVDTFFDKNKPELVYHCAAYTAVDKAEDEGRELDEKINVDGTKNVAEAAARVGATLVYISTDYVFGGTLPIGQEWPVDAPKAPESEYGRTKHLGEEAVVASGVKHYIVRTAWVFGSYGPNFVFTMQNLATRFPELTVVNDQHGRPTWTRTLAEFMVYLVNEKADFGFYHLTNDAAPGEDVTWFDFAKEILKDTDVLVKPVDSSKFPAKAKRPFNSTMSLEKAKATGFVIPTWQDALASMLEKGDLRENKDGLKGEISKK"/>
+          </listOfKeyValueData>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_nadph_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_dtdp4d6dm_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_dtdprmn_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_nadp_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation fbc:id="R_TDPDRR_gpr" fbc:name="R_TDPDRR_gpr">
+          <annotation>
+            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+              <data id="gbank_description" value="dTDP-4-dehydrorhamnose reductase"/>
+              <data id="gbank_name" value="LLMG_RS01110"/>
+              <data id="gbank_seq" value="MILITGGNGQLGTELRHLLDERGMAYTATDAKELDITDKVAVDTFFDKNKPELVYHCAAYTAVDKAEDEGRELDEKINVDGTKNVAEAAARVGATLVYISTDYVFGGTLPIGQEWPVDAPKAPESEYGRTKHLGEEAVVASGVKHYIVRTAWVFGSYGPNFVFTMQNLATRFPELTVVNDQHGRPTWTRTLAEFMVYLVNEKADFGFYHLTNDAAPGEDVTWFDFAKEILKDTDVLVKPVDSSKFPAKAKRPFNSTMSLEKAKATGFVIPTWQDALASMLEKGDLRENKDGLKGEISKK"/>
+              <data id="gbank_id" value="WP_011834293.1"/>
+            </listOfKeyValueData>
+          </annotation>
+          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01110"/>
+        </fbc:geneProductAssociation>
+      </reaction>
       <reaction metaid="meta_R_EX_trp__L_e" id="R_EX_trp__L_e" name="L-Tryptophan exchange" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par0">
         <listOfReactants>
           <speciesReference species="M_trp__L_e" stoichiometry="1" constant="true"/>
@@ -11513,6 +11461,31 @@
             </listOfKeyValueData>
           </annotation>
           <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS06800"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="meta_R_TDPGDH" id="R_TDPGDH" name="DTDPglucose 4 6 dehydratase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
+        <annotation>
+          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+            <data id="gbank_seq_LLMG_RS01105" value="MTEFKNIVVTGGAGFIGSNFVHYVYNNHPDVHITVLDKLTYAGNVNNINMLFDSGRVELVVGDIADPEIVDQVASKADAIVHYAAESHNDNSLKSQDEFIQTNFIGTYTLIQAARKYDLRFHHVSTDEVYGDLPYREDLPGHGEGEGEKFTDKTPYNPSSPYSSTKAASDLIVRAWVRSFGLKATISNCSNNYGPFQHIEKFIPRQITNILSGIKPKLYGDGKNVRDWIHTEDHSSGVWTILTKGQMGETYLIGADGEKNNKEVLEDILTRMGKDKDDYDRVTDRAGHDLRYAIDNSKLRTELGWTPKHTDFESGLQATIDWYRENENWWKAEKDAVEAKYAETQKVLDK"/>
+          </listOfKeyValueData>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_dtdpglu_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_h2o_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_dtdp4d6dg_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation fbc:id="R_TDPGDH_gpr" fbc:name="R_TDPGDH_gpr">
+          <annotation>
+            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+              <data id="gbank_description" value="dTDP-glucose 4,6-dehydratase"/>
+              <data id="gbank_name" value="LLMG_RS01105"/>
+              <data id="gbank_seq" value="MTEFKNIVVTGGAGFIGSNFVHYVYNNHPDVHITVLDKLTYAGNVNNINMLFDSGRVELVVGDIADPEIVDQVASKADAIVHYAAESHNDNSLKSQDEFIQTNFIGTYTLIQAARKYDLRFHHVSTDEVYGDLPYREDLPGHGEGEGEKFTDKTPYNPSSPYSSTKAASDLIVRAWVRSFGLKATISNCSNNYGPFQHIEKFIPRQITNILSGIKPKLYGDGKNVRDWIHTEDHSSGVWTILTKGQMGETYLIGADGEKNNKEVLEDILTRMGKDKDDYDRVTDRAGHDLRYAIDNSKLRTELGWTPKHTDFESGLQATIDWYRENENWWKAEKDAVEAKYAETQKVLDK"/>
+              <data id="gbank_id" value="WP_011834292.1"/>
+            </listOfKeyValueData>
+          </annotation>
+          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01105"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="meta_R_LEUt2r" id="R_LEUt2r" name="L leucine reversible transport via proton symport" reversible="true" fast="false" fbc:lowerFluxBound="bnd_par7" fbc:upperFluxBound="bnd_par31">
@@ -13298,6 +13271,33 @@
             </listOfKeyValueData>
           </annotation>
           <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS00155"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="meta_R_G1PTT" id="R_G1PTT" name="Glucose 1 phosphate thymidylyltransferase" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
+        <annotation>
+          <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+            <data id="gbank_seq_LLMG_RS01090" value="MKGIILAGGSGTRLYPLTRAASKQLMPIYDKPMIYYPLSTLMLAGIKDILIISTPTDTPRFKELLQDGSEFGINLQYAVQPSPDGLAQAFIIGEDFIGDDSVALILGDNIYHGPGMSKMLQNAAAKEKGATVFGYHVPDPERFGVVEFDKDMNAVSIEEKPEEPKSNYAVTGLYFYDNDVIEIAKSIEPSPRGELEITDVNKAYLERGDLSVELMGRGFAWLDTGTHESLLEAAQYIETVQRMQNMQVANLEEIAYRMGYITEEDVRTLAQPLKKNEYGQYLLRLIGDK"/>
+          </listOfKeyValueData>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_dttp_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_h_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_g1p_c" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ppi_c" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_dtdpglu_c" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation fbc:id="R_G1PTT_gpr" fbc:name="R_G1PTT_gpr">
+          <annotation>
+            <listOfKeyValueData xmlns="http://pysces.sourceforge.net/KeyValueData">
+              <data id="gbank_description" value="glucose-1-phosphate thymidylyltransferase"/>
+              <data id="gbank_name" value="LLMG_RS01090"/>
+              <data id="gbank_seq" value="MKGIILAGGSGTRLYPLTRAASKQLMPIYDKPMIYYPLSTLMLAGIKDILIISTPTDTPRFKELLQDGSEFGINLQYAVQPSPDGLAQAFIIGEDFIGDDSVALILGDNIYHGPGMSKMLQNAAAKEKGATVFGYHVPDPERFGVVEFDKDMNAVSIEEKPEEPKSNYAVTGLYFYDNDVIEIAKSIEPSPRGELEITDVNKAYLERGDLSVELMGRGFAWLDTGTHESLLEAAQYIETVQRMQNMQVANLEEIAYRMGYITEEDVRTLAQPLKKNEYGQYLLRLIGDK"/>
+              <data id="gbank_id" value="WP_011834289.1"/>
+            </listOfKeyValueData>
+          </annotation>
+          <fbc:geneProductRef fbc:geneProduct="G_LLMG_RS01090"/>
         </fbc:geneProductAssociation>
       </reaction>
       <reaction metaid="meta_R_URIK3" id="R_URIK3" name="Uridine kinase (ITP:Uridine)" reversible="false" fast="false" fbc:lowerFluxBound="bnd_par0" fbc:upperFluxBound="bnd_par31">
@@ -17549,7 +17549,6 @@
       <fbc:geneProduct metaid="meta_G_LLMG_RS05020" fbc:id="G_LLMG_RS05020" fbc:label="LLMG_RS05020"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS04395" fbc:id="G_LLMG_RS04395" fbc:label="LLMG_RS04395"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS07700" fbc:id="G_LLMG_RS07700" fbc:label="LLMG_RS07700"/>
-      <fbc:geneProduct metaid="meta_G_LLMG_RS01090" fbc:id="G_LLMG_RS01090" fbc:label="LLMG_RS01090"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS12215" fbc:id="G_LLMG_RS12215" fbc:label="LLMG_RS12215"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS06485" fbc:id="G_LLMG_RS06485" fbc:label="LLMG_RS06485"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS06480" fbc:id="G_LLMG_RS06480" fbc:label="LLMG_RS06480"/>
@@ -17718,6 +17717,7 @@
       <fbc:geneProduct metaid="meta_G_LLMG_RS09715" fbc:id="G_LLMG_RS09715" fbc:label="LLMG_RS09715"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS09720" fbc:id="G_LLMG_RS09720" fbc:label="LLMG_RS09720"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS10900" fbc:id="G_LLMG_RS10900" fbc:label="LLMG_RS10900"/>
+      <fbc:geneProduct metaid="meta_G_LLMG_RS01110" fbc:id="G_LLMG_RS01110" fbc:label="LLMG_RS01110"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS05380" fbc:id="G_LLMG_RS05380" fbc:label="LLMG_RS05380"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS04455" fbc:id="G_LLMG_RS04455" fbc:label="LLMG_RS04455"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS10345" fbc:id="G_LLMG_RS10345" fbc:label="LLMG_RS10345"/>
@@ -17795,7 +17795,6 @@
       <fbc:geneProduct metaid="meta_G_LLMG_RS12210" fbc:id="G_LLMG_RS12210" fbc:label="LLMG_RS12210"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08715" fbc:id="G_LLMG_RS08715" fbc:label="LLMG_RS08715"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08720" fbc:id="G_LLMG_RS08720" fbc:label="LLMG_RS08720"/>
-      <fbc:geneProduct metaid="meta_G_LLMG_RS01110" fbc:id="G_LLMG_RS01110" fbc:label="LLMG_RS01110"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS10940" fbc:id="G_LLMG_RS10940" fbc:label="LLMG_RS10940"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS04065" fbc:id="G_LLMG_RS04065" fbc:label="LLMG_RS04065"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS04070" fbc:id="G_LLMG_RS04070" fbc:label="LLMG_RS04070"/>
@@ -17860,7 +17859,7 @@
       <fbc:geneProduct metaid="meta_G_LLMG_RS00655" fbc:id="G_LLMG_RS00655" fbc:label="LLMG_RS00655"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS02035" fbc:id="G_LLMG_RS02035" fbc:label="LLMG_RS02035"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS09705" fbc:id="G_LLMG_RS09705" fbc:label="LLMG_RS09705"/>
-      <fbc:geneProduct metaid="meta_G_LLMG_RS01105" fbc:id="G_LLMG_RS01105" fbc:label="LLMG_RS01105"/>
+      <fbc:geneProduct metaid="meta_G_LLMG_RS01090" fbc:id="G_LLMG_RS01090" fbc:label="LLMG_RS01090"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08560" fbc:id="G_LLMG_RS08560" fbc:label="LLMG_RS08560"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08705" fbc:id="G_LLMG_RS08705" fbc:label="LLMG_RS08705"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08710" fbc:id="G_LLMG_RS08710" fbc:label="LLMG_RS08710"/>
@@ -17948,6 +17947,7 @@
       <fbc:geneProduct metaid="meta_G_LLMG_RS11990" fbc:id="G_LLMG_RS11990" fbc:label="LLMG_RS11990"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS08445" fbc:id="G_LLMG_RS08445" fbc:label="LLMG_RS08445"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS12580" fbc:id="G_LLMG_RS12580" fbc:label="LLMG_RS12580"/>
+      <fbc:geneProduct metaid="meta_G_LLMG_RS01105" fbc:id="G_LLMG_RS01105" fbc:label="LLMG_RS01105"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS02950" fbc:id="G_LLMG_RS02950" fbc:label="LLMG_RS02950"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS03320" fbc:id="G_LLMG_RS03320" fbc:label="LLMG_RS03320"/>
       <fbc:geneProduct metaid="meta_G_LLMG_RS01795" fbc:id="G_LLMG_RS01795" fbc:label="LLMG_RS01795"/>
@@ -18096,14 +18096,14 @@
         <groups:listOfMembers metaid="meta_group6_members">
           <groups:member groups:idRef="R_EDA"/>
           <groups:member groups:idRef="R_MNNH"/>
-          <groups:member groups:idRef="R_TDPDRR_1"/>
+          <groups:member groups:idRef="R_TDPDRR"/>
         </groups:listOfMembers>
       </groups:group>
       <groups:group metaid="meta_group7" sboTerm="SBO:0000633" groups:id="group7" groups:name="Cell Envelope Biosynthesis" groups:kind="partonomy">
         <groups:listOfMembers metaid="meta_group7_members">
-          <groups:member groups:idRef="R_G1PTMT"/>
+          <groups:member groups:idRef="R_G1PTT"/>
           <groups:member groups:idRef="R_TDPDRE"/>
-          <groups:member groups:idRef="R_TDPGDH_1"/>
+          <groups:member groups:idRef="R_TDPGDH"/>
           <groups:member groups:idRef="R_UDPGALM"/>
         </groups:listOfMembers>
       </groups:group>

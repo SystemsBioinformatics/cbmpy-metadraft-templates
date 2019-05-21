@@ -518,7 +518,7 @@
   "LLMG_RS09635": "lab-llav2"
  },
  "lab-llav2": {
-  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
+  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
   "genbank_in": "iNF517.gb",
   "gene2reaction": {
    "LLMG_RS01830": [
@@ -535,7 +535,7 @@
     "R_CBPS"
    ],
    "LLMG_RS01110": [
-    "R_TDPDRR_1"
+    "R_TDPDRR"
    ],
    "LLMG_RS10195": [
     "R_CYSTRS_1"
@@ -1291,7 +1291,7 @@
     "R_GTHPi"
    ],
    "LLMG_RS01105": [
-    "R_TDPGDH_1"
+    "R_TDPGDH"
    ],
    "LLMG_RS02625": [
     "R_MI1PP"
@@ -1894,7 +1894,7 @@
     "R_TDPDRE"
    ],
    "LLMG_RS01090": [
-    "R_G1PTMT"
+    "R_G1PTT"
    ],
    "LLMG_RS05085": [
     "R_AIRCr"
@@ -2326,8 +2326,8 @@
   },
   "sbml_in": "iNF517_v2.xml",
   "taxon_id": "416870",
-  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2)-(iNF517_v2).seqplus.xml",
-  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2)-(iNF517_v2).seqplus.xml",
+  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2)-(iNF517_v2).seqplus.xml",
+  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2)-(iNF517_v2).seqplus.xml",
   "reaction2gene": {
    "R_HSTPTr": [
     "LLMG_RS06585"
@@ -2428,8 +2428,9 @@
    "R_G6PDA": [
     "LLMG_RS04735"
    ],
-   "R_ILETRS_1": [
-    "LLMG_RS10255"
+   "R_NOX": [
+    "LLMG_RS08890",
+    "LLMG_RS02085"
    ],
    "R_DALTAL_LLA": [
     "LLMG_RS06170",
@@ -2530,8 +2531,9 @@
     "LLMG_RS06730",
     "LLMG_RS06715"
    ],
-   "R_TDPDRR_1": [
-    "LLMG_RS01110"
+   "R_3HAD40": [
+    "LLMG_RS02815",
+    "LLMG_RS08935"
    ],
    "R_CYTK1": [
     "LLMG_RS03780"
@@ -2544,6 +2546,9 @@
    ],
    "R_FMNAT": [
     "LLMG_RS07215"
+   ],
+   "R_HSDy": [
+    "LLMG_RS06750"
    ],
    "R_NNATr": [
     "LLMG_RS07435",
@@ -2631,9 +2636,8 @@
    "R_DURIPP": [
     "LLMG_RS08650"
    ],
-   "R_NOX": [
-    "LLMG_RS08890",
-    "LLMG_RS02085"
+   "R_TDPDRR": [
+    "LLMG_RS01110"
    ],
    "R_SUCD1": [
     "LLMG_RS01985"
@@ -2977,6 +2981,9 @@
    "R_MTHFR3": [
     "LLMG_RS06195"
    ],
+   "R_3OAS60": [
+    "LLMG_RS08945"
+   ],
    "R_UMPK": [
     "LLMG_RS11470"
    ],
@@ -3068,10 +3075,6 @@
    "R_DURIK1": [
     "LLMG_RS02890"
    ],
-   "R_3HAD40": [
-    "LLMG_RS02815",
-    "LLMG_RS08935"
-   ],
    "R_HSST": [
     "LLMG_RS10960"
    ],
@@ -3083,8 +3086,8 @@
    "R_BTDD_RR": [
     "LLMG_RS08265"
    ],
-   "R_3OAS60": [
-    "LLMG_RS08945"
+   "R_M1PD": [
+    "LLMG_RS00155"
    ],
    "R_GLNabc": [
     "LLMG_RS09715",
@@ -3202,11 +3205,11 @@
     "LLMG_RS02815",
     "LLMG_RS08935"
    ],
-   "R_M1PD": [
-    "LLMG_RS00155"
-   ],
    "R_PGMT_B": [
     "LLMG_RS02315"
+   ],
+   "R_G1PTT": [
+    "LLMG_RS01090"
    ],
    "R_MTHFC": [
     "LLMG_RS08520"
@@ -3450,6 +3453,9 @@
    "R_ALATRS_1": [
     "LLMG_RS09540"
    ],
+   "R_TDPGDH": [
+    "LLMG_RS01105"
+   ],
    "R_AGDC": [
     "LLMG_RS05670"
    ],
@@ -3636,8 +3642,9 @@
    "R_ADADir": [
     "LLMG_RS03940"
    ],
-   "R_3OAR100": [
-    "LLMG_RS08950"
+   "R_PROabc": [
+    "LLMG_RS05325",
+    "LLMG_RS05330"
    ],
    "R_APATi": [
     "LLMG_RS01520"
@@ -3676,9 +3683,6 @@
    "R_ACALD": [
     "LLMG_RS12215"
    ],
-   "R_TDPGDH_1": [
-    "LLMG_RS01105"
-   ],
    "R_FMETTRS_1": [
     "LLMG_RS10745"
    ],
@@ -3713,12 +3717,11 @@
     "LLMG_RS01925",
     "LLMG_RS01930"
    ],
-   "R_HSDy": [
-    "LLMG_RS06750"
+   "R_ILETRS_1": [
+    "LLMG_RS10255"
    ],
-   "R_PROabc": [
-    "LLMG_RS05325",
-    "LLMG_RS05330"
+   "R_3OAR100": [
+    "LLMG_RS08950"
    ],
    "R_CYSTRS_1": [
     "LLMG_RS10195"
@@ -3950,9 +3953,6 @@
    ],
    "R_PRATPP": [
     "LLMG_RS06535"
-   ],
-   "R_G1PTMT": [
-    "LLMG_RS01090"
    ],
    "R_NADH4": [
     "LLMG_RS08715",

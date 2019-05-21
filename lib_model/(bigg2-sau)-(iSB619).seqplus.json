@@ -621,7 +621,7 @@
   "SA_RS01275": "bigg2-sau"
  },
  "bigg2-sau": {
-  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iSB619.gb",
   "gene2reaction": {
    "SA_RS02970": [
@@ -2820,8 +2820,8 @@
   },
   "sbml_in": "iSB619.xml",
   "taxon_id": "158879",
-  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sau)-(iSB619).seqplus.xml",
-  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sau)-(iSB619).seqplus.xml",
+  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sau)-(iSB619).seqplus.xml",
+  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sau)-(iSB619).seqplus.xml",
   "reaction2gene": {
    "R_OIVD2": [
     "SA_RS07635",

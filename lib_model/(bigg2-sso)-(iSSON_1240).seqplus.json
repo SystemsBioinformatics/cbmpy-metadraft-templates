@@ -1242,7 +1242,7 @@
   "SSON_1242": "bigg2-sso"
  },
  "bigg2-sso": {
-  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iSSON_1240.gb",
   "gene2reaction": {
    "SSON_1640": [
@@ -7877,8 +7877,8 @@
   },
   "sbml_in": "iSSON_1240.xml",
   "taxon_id": "300269",
-  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sso)-(iSSON_1240).seqplus.xml",
-  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sso)-(iSSON_1240).seqplus.xml",
+  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sso)-(iSSON_1240).seqplus.xml",
+  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sso)-(iSSON_1240).seqplus.xml",
   "reaction2gene": {
    "R_CTPS2": [
     "SSON_2937"
