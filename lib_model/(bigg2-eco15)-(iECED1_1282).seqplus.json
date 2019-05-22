@@ -1281,7 +1281,7 @@
   "ECED1_1627": "bigg2-eco15"
  },
  "bigg2-eco15": {
-  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iECED1_1282.gb",
   "gene2reaction": {
    "ECED1_0427": [
@@ -7757,8 +7757,8 @@
   },
   "sbml_in": "iECED1_1282.xml",
   "taxon_id": "585397",
-  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-eco15)-(iECED1_1282).seqplus.xml",
-  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-eco15)-(iECED1_1282).seqplus.xml",
+  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-eco15)-(iECED1_1282).seqplus.xml",
+  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-eco15)-(iECED1_1282).seqplus.xml",
   "reaction2gene": {
    "R_GTHS": [
     "ECED1_3410"

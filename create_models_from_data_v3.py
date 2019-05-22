@@ -1,8 +1,6 @@
 """
 This file generates the complete default set of MetaDraft template models
 """
-
-
 import os
 cDir = os.path.dirname(os.path.abspath(os.sys.argv[0]))
 from biotools import createSeqplusModel
@@ -39,7 +37,7 @@ def build_bigg2_original():
     clj = ('clj', 'iHN637-(CP000099.1).gbk ', 'iHN637.xml')
     eco = ('eco', 'iJO1366-(NC_000913.3).gbk', 'iJO1366.xml')
     bsu = ('bsu', 'iYO844-(AL009126.3).gbk', 'iYO844.xml')
-    sty = ('sty', 'STM_v1_0-(AE006468.1).gbk', 'STM_v1_0.xml')
+    sty = ('stm', 'STM_v1_0-(AE006468.1).gbk', 'STM_v1_0.xml')
     #sdy = ('sdy', 'iSDY_1059-(CP000034.1).gbk', 'iSDY_1059.xml') # suspicious
     sce = ('sce', ["iMM904-(GCF_000146045_2).gbff"], 'iMM904.xml')
     psd = ('psd', ["iJN746-(NC_002947_4).gbk"], 'iJN746.xml')
@@ -49,7 +47,7 @@ def build_bigg2_original():
     saur = ('saur', 'iSB619-(NC_002745.2).gbk', 'iSB619.xml')
     shig = ('shig', 'iS_1188-(AE014073.1).gbk', 'iS_1188.xml')
     scer = ('scer', ["Saccharomyces_cerevisiae_S288c-(BK006935.2).gbff", "Saccharomyces_cerevisiae_S288c-(BK006935.2)-mito.gbff"], 'iND750.xml')
-    libSet = 'bigg2'
+    libSet = 'bigg2v1'
     models = [mba, clj, eco, bsu, sty, sce, psd, gme, kpn, hpy, saur, shig, scer] # sdy
     return libSet, models, True
 
@@ -139,6 +137,8 @@ def build_bigg2_new():
     #models = [cgr, ssp, eco31] # incomplete genbank file, incoherent gene identifiers, usable identifers that should be fixed in source model``
     #models = [sbo, eco33] # ,  test
     return libSet, models, True
+
+
 
 """
 Note on the gene vs. locus_tag issue, it is now a GenBank best practice to assign locus_tags to genes,
