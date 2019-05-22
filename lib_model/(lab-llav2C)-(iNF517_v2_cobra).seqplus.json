@@ -1,6 +1,6 @@
 {
  "lab-llav2C": {
-  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
+  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
   "genbank_in": "iNF517.gb",
   "gene2reaction": {
    "LLMG_RS01830": [
@@ -1808,8 +1808,8 @@
   },
   "sbml_in": "iNF517_v2_cobra.xml",
   "taxon_id": "416870",
-  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2C)-(iNF517_v2_cobra).seqplus.xml",
-  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2C)-(iNF517_v2_cobra).seqplus.xml",
+  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2C)-(iNF517_v2_cobra).seqplus.xml",
+  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-llav2C)-(iNF517_v2_cobra).seqplus.xml",
   "reaction2gene": {
    "R_HSTPTr": [
     "LLMG_RS06585"

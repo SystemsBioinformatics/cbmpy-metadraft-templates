@@ -484,7 +484,7 @@
   "TM1653": "bigg2-tma"
  },
  "bigg2-tma": {
-  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iLJ478.gb",
   "gene2reaction": {
    "TM0061": [
@@ -2383,8 +2383,8 @@
   },
   "sbml_in": "iLJ478.xml",
   "taxon_id": "243274",
-  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-tma)-(iLJ478).seqplus.xml",
-  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-tma)-(iLJ478).seqplus.xml",
+  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-tma)-(iLJ478).seqplus.xml",
+  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-tma)-(iLJ478).seqplus.xml",
   "reaction2gene": {
    "R_NTPP4": [
     "TM0913"

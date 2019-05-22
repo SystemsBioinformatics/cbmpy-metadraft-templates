@@ -157,7 +157,7 @@ if __name__ == '__main__':
     # create a list of template models to create
     # still not good; build_synecocystis_v2()
 
-    build_all = [build_lab(), build_bigg1(), build_bigg2_new()]
+    build_all = [build_lab(), build_bigg1(), build_bigg2_original(), build_bigg2_new()]
     #build_all = [build_lab(), build_bigg1(), build_bigg2_original(), build_bigg2_new()]
     #build_all = [build_bigg2_new()]
 

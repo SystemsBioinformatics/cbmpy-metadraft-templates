@@ -1149,7 +1149,7 @@
   "agp": "bigg2-sbo1"
  },
  "bigg2-sbo1": {
-  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
+  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\bigg2",
   "genbank_in": "iSbBS512_1146.gb",
   "gene2reaction": {
    "SbBS512_E4453": [
@@ -7350,8 +7350,8 @@
   },
   "sbml_in": "iSbBS512_1146.xml",
   "taxon_id": "344609",
-  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sbo1)-(iSbBS512_1146).seqplus.xml",
-  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sbo1)-(iSbBS512_1146).seqplus.xml",
+  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sbo1)-(iSbBS512_1146).seqplus.xml",
+  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(bigg2-sbo1)-(iSbBS512_1146).seqplus.xml",
   "reaction2gene": {
    "R_CTPS2": [
     "SbBS512_E3093"

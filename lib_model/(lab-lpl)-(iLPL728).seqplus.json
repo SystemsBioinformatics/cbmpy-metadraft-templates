@@ -1,6 +1,6 @@
 {
  "lab-lpl": {
-  "data_path": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
+  "data_path": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\data\\lab",
   "genbank_in": "iLPL728.gb",
   "gene2reaction": {
    "lp_0263": [
@@ -2463,8 +2463,8 @@
   },
   "sbml_in": "iLPL728.xml",
   "taxon_id": "220668",
-  "sbml_out_generic": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-lpl)-(iLPL728).seqplus.xml",
-  "sbml_out": "e:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-lpl)-(iLPL728).seqplus.xml",
+  "sbml_out_generic": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-lpl)-(iLPL728).seqplus.xml",
+  "sbml_out": "d:\\cloud\\Dropbox\\projects\\sebastian_metadraft_templates\\metadraft_templates\\metadraft_template_data_2019-1\\lib_model\\(lab-lpl)-(iLPL728).seqplus.xml",
   "reaction2gene": {
    "R_HSTPTr": [
     "lp_2551"
