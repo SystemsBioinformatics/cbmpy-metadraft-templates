@@ -5,7 +5,7 @@ MetaToolkit: MetaDraft
 MetaDraft: for the reconstruction of Genome Scale Models
 
 MetaToolkit: MetaDraft (https://github.com/SystemsBioinformatics/cbmpy-metadraft)
-Copyright (C) 2016-2018 Brett G. Olivier, Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
+Copyright (C) 2016-2019 Brett G. Olivier, Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -24,6 +24,9 @@ Author: Brett G. Olivier PhD
 Contact email: b.g.olivier@vu.nl
 
 """
+
+from __future__ import division, print_function
+from __future__ import absolute_import
 
 import os, sys, random, copy, time, math, json, xlwt
 import sqlite3
@@ -223,7 +226,7 @@ def checkModelLocusTags(sbml, genbank, allow_gene_names=False):
                 cmod.setAnnotation('genbank_{}'.format(r_), gprMapAnnot[seq_record.id][r_])
             fileNum += 1
 
-        GBFile = file(G, 'r')
+        GBFile = open(G, 'r')
 
         USING_GENE_NAME = False
         for cds in Bio.SeqIO.InsdcIO.GenBankCdsFeatureIterator(GBFile):
@@ -272,7 +275,7 @@ def checkModelLocusTags(sbml, genbank, allow_gene_names=False):
     unknown = []
     noseq = []
     good = []
-    F = file(sbml.replace('.xml', '.seqcheck.csv'),'w')
+    F = open(sbml.replace('.xml', '.seqcheck.csv'),'w')
     #if cmod.__FBC_VERSION__ < 2:
         #geneIDs = cmod.getGeneIds()
     #else:
@@ -487,9 +490,9 @@ def createMegaGenomeBasic(fname, fdir, input_files=None):
             else:
                 print('File {} does not exist'.format(os.path.join(fdir, f_)))
 
-    Fout = file(fname, 'w')
+    Fout = open(fname, 'w')
     for f_ in catlist:
-        F = file(f_, 'r')
+        F = open(f_, 'r')
         Fout.write(F.read())
         Fout.flush()
         F.close()
@@ -513,7 +516,7 @@ def createMetaProteome(fname, link, optimized=True, paranoid_style=True, K=0.13)
 
     metaprotdat = {}
 
-    F = file(fname, 'w')
+    F = open(fname, 'w')
     outseq = []
     total_prot_length = 0
     #protein_lengths = {}
@@ -587,7 +590,7 @@ def idFilter(link, oidList):
     """
     idmap = []
     for o_ in oidList:
-        keys = list(link[o_]['reaction2gene'].viewkeys())
+        keys = list(link[o_]['reaction2gene'].keys())
         idmap.append(set(keys))
 
     idx = copy.deepcopy(idmap[0])
@@ -632,7 +635,7 @@ def addGeneInformationToDB(gbkf, gendb, table, idxc):
     """
     #print(gbkf)
     assert(os.path.exists(gbkf))
-    GBFile = file(gbkf, 'r')
+    GBFile = open(gbkf, 'r')
     GBcds = Bio.SeqIO.InsdcIO.GenBankCdsFeatureIterator(GBFile)
     cntr = 0
     #ltags = []
@@ -717,15 +720,21 @@ def createBasicFASTAfromFile(gbkf, ext_replace='.in.fasta', gene_prefix=None):
             if cntr == 0:
                 outF = fasta.replace('.gbk', '.in.fasta').replace('.gbff', '.in.fasta').replace('.gb', '.in.fasta')
                 cntr += 1
-            GBFile = file(fasta, 'r')
+            GBFile = open(fasta, 'r')
             GBcds = Bio.SeqIO.InsdcIO.GenBankCdsFeatureIterator(GBFile)
             for cds in GBcds:
-                if cds.seq != None:
-                    cds.id = cds.name
+                if cds.seq is not None:
+                    if cds.name != '<unknown name>':
+                        cds.id = cds.name
+                    else:
+                        cds.id = cds.id.replace('.','_').replace(':','_').replace('-','_')
                     cds.description = ''
                     if gene_prefix is not None:
                         cds.id = gene_prefix + cds.id
-                    proteins[cds.name] = cds
+                    if cds.name != '<unknown name>':
+                        proteins[cds.name] = cds
+                    else:
+                        proteins[cds.id] = cds
             GBFile.close()
         else:
             raise RuntimeError('ERROR: Unknown file: {}'.format(fasta))
@@ -735,7 +744,7 @@ def createBasicFASTAfromFile(gbkf, ext_replace='.in.fasta', gene_prefix=None):
     writeFASTA(outF, proteins)
     return outF
 
-def createSeqplusModel(modlist, data_dir, model_dir, lib_set, gene_db=None, add_cobra_annot=False, useV2=False, compress_output=False):
+def createSeqplusModel(modlist, data_dir, model_dir, lib_set, gene_db=None, add_cobra_annot=False, useV2=True, compress_output=False):
     """
     This function takes pairs of models and genbank files, updates the locus tags in the model (if necessary),
     merges GenBank annotation, including AA sequences, into the SBML model::
@@ -827,7 +836,7 @@ def createSeqplusModel(modlist, data_dir, model_dir, lib_set, gene_db=None, add_
         LD['taxon_id'] = taxId
 
         # this is almost "certain" never to happen but just in case .... check for reactions without genes
-        for k_ in list(LD['reaction2gene'].viewkeys()):
+        for k_ in list(LD['reaction2gene'].keys()):
             if len(LD['reaction2gene'][k_]) == 0:
                 print('INFO: Reaction has no genes associated:', k_, LD['reaction2gene'][k_])
                 LD['reaction2gene'].pop(k_)
@@ -864,7 +873,7 @@ def createSeqplusModelMetaIdx(fmod, oid, oclass, metadraft_lib_model):
      - *class* the model category e.g. 'vu'
      - *metadraft_lib_model* the target MetaDraft lib_model directory
 
-     'edb', 'vu', "d:\@virdrives\google\work\python\metadraft\lib_model"
+     'edb', 'vu', "<path>"
 
     """
 
@@ -915,9 +924,8 @@ def createCDSdb(list_of_files):
     output = {}
     for gbkf in list_of_files:
         output[gbkf] = []
-        GBFile = file(gbkf, 'r')
+        GBFile = open(gbkf, 'r')
         GBcds = Bio.SeqIO.InsdcIO.GenBankCdsFeatureIterator(GBFile)
-        cntr = 0
         for cds in GBcds:
             if cds.seq != None:
                 data = {'pid' : cds.id,
